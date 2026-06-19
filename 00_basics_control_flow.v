@@ -1,6 +1,6 @@
 // 00_basics_control_flow.v
 // This demo file covers V's basic syntax: printing, conditions, match, and loops up to arrays.
-
+import os
 fn main() {
 	println("=== 0. Basic Syntax, Conditions, and Loops ===")
 
@@ -10,7 +10,8 @@ fn main() {
 	   look like this. */
 	print("Hello ")    // print() doesn't add a newline
 	println("World!")  // println() adds a newline
-
+	name := os.input('Enter your name: ')
+	println("Hello, ${name}")
 	// 2. Conditions: if / else
 	// Parentheses are NOT required around the condition, but curly braces {} are mandatory.
 	score := 85
